@@ -1,5 +1,7 @@
 name: RcItemLoggingIntegration
 version: '0.1.0-beta'
+authors: [sysnote8]
 main: net.azisaba.rcitemloggingintegration.RcItemLoggingIntegration
 api-version: '1.21'
 description: Let's integrate RcItemLogging with other plugins!
+softdepend: [Shopkeepers]
