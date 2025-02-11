@@ -59,7 +59,7 @@ public class ShopkeeperListener implements Listener {
         return itemStack.getType() + " " + operator.getSymbol() + itemStack.getAmount();
     }
 
-    public static enum OperatorType {
+    public enum OperatorType {
         EQUAL("="),
         MINUS("-"),
         PLUS("+");
