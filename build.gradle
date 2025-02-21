@@ -23,6 +23,10 @@ repositories {
         name = "shopkeepers-repo"
         url = "https://repo.projectshard.dev/repository/releases/"
     }
+    maven {
+        name = "jitpack"
+        url = "https://jitpack.io"
+    }
 }
 
 dependencies {
@@ -32,6 +36,7 @@ dependencies {
 
     // Optional dependencies
     compileOnly("com.nisovin.shopkeepers:ShopkeepersAPI:2.23.3")
+    compileOnly("com.github.YiC200333:XConomyAPI:2.25.1")
 }
 
 def targetJavaVersion = 21

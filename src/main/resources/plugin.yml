@@ -4,4 +4,6 @@ authors: [sysnote8]
 main: net.azisaba.rcitemloggingintegration.RcItemLoggingIntegration
 api-version: '1.21'
 description: Let's integrate RcItemLogging with other plugins!
-softdepend: [Shopkeepers]
+softdepend:
+  - Shopkeepers
+  - XConomy
