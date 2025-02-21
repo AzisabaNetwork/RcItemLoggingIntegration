@@ -23,17 +23,24 @@ public class ListenerManager {
 
     public void register(JavaPlugin plugin) {
         logger.info("Registering event listeners...");
+
         PluginManager pluginManager = Bukkit.getPluginManager();
+
         ArrayList<String> registeredPlugins = new ArrayList<>();
         ArrayList<String> skippedPlugins = new ArrayList<>();
+
         for(String key: listenerMap.keySet()) {
             if(pluginManager.isPluginEnabled(key)) {
+                // get all listeners
                 ArrayList<Listener> listenerList = listenerMap.get(key);
                 for(Listener listener: listenerList) {
                     pluginManager.registerEvents(listener, plugin);
                 }
+
+                // on success
                 registeredPlugins.add(key);
             } else {
+                // on skip
                 skippedPlugins.add(key);
             }
         }
