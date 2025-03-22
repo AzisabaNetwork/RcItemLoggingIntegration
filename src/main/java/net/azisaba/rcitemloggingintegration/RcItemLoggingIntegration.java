@@ -1,5 +1,6 @@
 package net.azisaba.rcitemloggingintegration;
 
+import net.azisaba.rcitemloggingintegration.integration.AuctionHouseListener;
 import net.azisaba.rcitemloggingintegration.integration.ShopkeeperListener;
 import net.azisaba.rcitemloggingintegration.integration.XConomyListener;
 import net.azisaba.rcitemloggingintegration.manager.ListenerManager;
@@ -15,6 +16,7 @@ public final class RcItemLoggingIntegration extends JavaPlugin {
         listenerManager = new ListenerManager(getLogger());
         listenerManager.addListener("Shopkeepers", new ShopkeeperListener(getLogger()));
         listenerManager.addListener("XConomy", new XConomyListener(getLogger()));
+        listenerManager.addListener("AuctionHouse", new AuctionHouseListener());
 
         listenerManager.register(this);
         getLogger().info("Initialized!");

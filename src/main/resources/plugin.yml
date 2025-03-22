@@ -7,3 +7,4 @@ description: Let's integrate RcItemLogging with other plugins!
 softdepend:
   - Shopkeepers
   - XConomy
+  - AuctionHouse

@@ -37,6 +37,7 @@ dependencies {
     // Optional dependencies
     compileOnly("com.nisovin.shopkeepers:ShopkeepersAPI:2.23.3")
     compileOnly("com.github.YiC200333:XConomyAPI:2.25.1")
+    compileOnly(files("libs/AuctionHouse-1.20.4-3.7.1.jar"))
 }
 
 def targetJavaVersion = 21
